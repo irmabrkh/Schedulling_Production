@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_variablefont"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <TextView
+        android:id="@+id/email_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_variablefont"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit your profile"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/blue_sky"/>
+
+    <Button
+        android:id="@+id/btn_danger_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danger Zone"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/ef_dasar"/>
+
+</LinearLayout>

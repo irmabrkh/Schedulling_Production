@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/home_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:background="@color/white">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="pin"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/logo_home"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_moon"/>
+
+        <ImageButton
+            android:id="@+id/notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="end"
+            android:src="@drawable/baseline_notifications"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/selamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_variablefont"/>
+    </RelativeLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/queue_bar"
+                android:layout_width="335dp"
+                android:layout_height="91dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/light_grey">
+
+                <TextView
+                    android:id="@+id/tul_queue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="20dp"
+                    android:text="Queue"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_variablefont"/>
+
+                <TextView
+                    android:id="@+id/angkaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="45dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo_que"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginHorizontal="265dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_people">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/complete_bar"
+                android:layout_width="335dp"
+                android:layout_height="91dp"
+                android:layout_below="@id/queue_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/dark_grey">
+
+                <TextView
+                    android:id="@+id/tul_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="220dp"
+                    android:paddingTop="20dp"
+                    android:text="Complete Today"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_variablefont"/>
+
+                <TextView
+                    android:id="@+id/angkac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="300dp"
+                    android:paddingTop="45dp"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo_com"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_com"
+                    android:tint="@color/white">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/totalTask_bar"
+                android:layout_width="335dp"
+                android:layout_height="91dp"
+                android:layout_below="@id/complete_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/light_grey">
+
+                <TextView
+                    android:id="@+id/tul_totalTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="20dp"
+                    android:text="Total Task Complete"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_variablefont"/>
+
+                <TextView
+                    android:id="@+id/angkatoTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingTop="50dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo_toTask"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginHorizontal="265dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_check">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reviewing_bar"
+                android:layout_width="335dp"
+                android:layout_height="91dp"
+                android:layout_below="@id/totalTask_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/dark_grey">
+
+                <TextView
+                    android:id="@+id/tul_reviewing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="250dp"
+                    android:paddingTop="20dp"
+                    android:text="Reviewing"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_variablefont"/>
+
+                <TextView
+                    android:id="@+id/angkar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="300dp"
+                    android:paddingTop="50dp"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/logo_reviewing"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_list"
+                    android:tint="@color/white">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+            
+            <TextView
+                android:id="@+id/depertement_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reviewing_bar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Departement active on ..."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_variablefont"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:text="Task List"
+        android:textSize="20dp"
+        android:fontFamily="@font/inter_variablefont"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Manage all your existing task list or add a new one"
+        android:textSize="9sp"
+        android:fontFamily="@font/inter_variablefont">
+    </TextView>
+
+    <Button
+        android:id="@+id/new_task"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Add New Task List"
+        android:layout_marginTop="5dp"
+        android:textSize="9sp"
+        android:backgroundTint="@color/ef_dasar"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp">
+    </Button>
+
+    <TableLayout
+        android:id="@+id/tabel_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1">
+
+        <!-- Baris Pertama -->
+        <TableRow
+            android:background="@color/light_grey">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <!-- Baris Kedua -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data 1.1"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data 1.2"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <!-- Baris Ketiga -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data 2.1"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data 2.2"
+                android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="250dp">
+    
+    <RelativeLayout
+        android:id="@+id/judul_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/selamat_datang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME TO"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_variablefont"/>
+
+    <TextView
+        android:id="@+id/effiplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/selamat_datang"
+        android:text=" EffiPlan"
+        android:textColor="@color/ef_dasar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_variablefont"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_below="@id/judul_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Silahkan login untuk melanjutkan"
+        android:textSize="11dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@null"
+        app:boxStrokeColor="@color/teal_200"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeWidthFocused="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_username_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_pass_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textField_username_login"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@null"
+        app:boxStrokeColor="@color/teal_200"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeWidthFocused="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_pass_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/sudah_punya_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textField_pass_login"
+        android:layout_centerHorizontal="true"
+        android:text="Don't have an account yet?"
+        android:textColor="@color/link"
+        android:textSize="12sp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        style="@style/BtnLogin"
+        android:text="Login"
+        android:backgroundTint="@color/dark_grey"
+        android:layout_below="@id/sudah_punya_akun"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
