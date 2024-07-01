@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.scheduling_production"
-        minSdk = 19
+        minSdk = 24
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"

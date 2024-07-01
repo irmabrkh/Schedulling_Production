@@ -39,5 +39,4 @@ class LoginActivity : AppCompatActivity (){
         // Perform simple validation. Replace with your own logic.
         return email.isNotEmpty() && password.isNotEmpty()
     }
-    }
 }
