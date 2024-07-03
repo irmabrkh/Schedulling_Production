@@ -42,7 +42,6 @@
         android:backgroundTint="@color/ef_dasar"
         android:src="@drawable/ic_grid_view"
         app:layout_anchor="@+id/bottom_app_bar"
-        app:layout_anchorGravity="top|center"
         app:maxImageSize="30dp"
         app:tint="@color/white" />
 
