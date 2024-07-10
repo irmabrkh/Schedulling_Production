@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="150dp">
+    android:layout_margin="50dp">
 
     <RelativeLayout
         android:id="@+id/judul_register"
@@ -19,7 +19,7 @@
             android:text="WELCOME TO"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:fontFamily="@font/inter_variablefont"/>
 
         <TextView
@@ -30,7 +30,7 @@
             android:text=" EffiPlan"
             android:textColor="@color/ef_dasar"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:fontFamily="@font/inter_variablefont"/>
 
     </RelativeLayout>
@@ -43,7 +43,7 @@
         android:paddingTop="5dp"
         android:layout_centerHorizontal="true"
         android:text="Silahkan registrasi sebagai User baru untuk melanjutkan"
-        android:textSize="11dp" />
+        android:textSize="12sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField_username_register"
@@ -140,6 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="12dp"/>
@@ -165,6 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="12dp"/>
@@ -187,7 +189,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_regsitered"
         style="@style/BtnLogin"
-        android:text="Register"
+        android:text="REGISTER"
         android:backgroundTint="@color/dark_grey"
         android:layout_below="@id/registered"
         android:layout_marginTop="20dp"
