@@ -7,9 +7,8 @@ import android.os.Handler
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
-@Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
-    private val SPLASH_DISPLAY_LENGTH = 6000 // 2 detik
+    private val SPLASH_DISPLAY_LENGTH = 2000 // 2 detik
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
         floatBottom.setOnClickListener { showBottomDialog() }
+
     }
 
     private fun showBottomDialog() {
